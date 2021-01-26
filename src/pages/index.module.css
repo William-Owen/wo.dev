@@ -1,0 +1,35 @@
+.links {
+
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.links nav {
+
+	flex: 1;
+	display: block;
+
+}
+
+.links p {
+
+	margin: 0;
+
+}
+
+.links div {
+
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #ffffff40
+
+}
+
+.links div:last-child {
+
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+
+}

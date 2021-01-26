@@ -1,0 +1,32 @@
+import React from "react"
+import clsx from "clsx";
+import style from "./{{componentName}}.module.css"
+
+interface {{componentName}}Props {
+
+	children?: React.ReactNode
+
+}
+
+const {{componentName}}: React.FC<{{componentName}}Props> = ({children}) => {
+
+	const className = clsx([
+
+		style.{{componentName}},
+		"{{componentName}}",
+
+	])
+
+	return (
+
+		<div className={className}>
+
+			{children}
+
+		</div>
+
+	)
+
+}
+
+export default {{componentName}};
