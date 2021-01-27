@@ -1,14 +1,19 @@
-.links {
+@media screen AND (min-width: 800px) {
 
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-}
+	.links {
 
-.links nav {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
 
-	flex: 1;
-	display: block;
+	}
+
+	.links nav {
+
+		flex: 1;
+		display: block;
+
+	}
 
 }
 

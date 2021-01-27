@@ -1,0 +1,40 @@
+/* SkillList Code here */
+
+.SkillList {
+
+	padding: 20px;
+	margin: 20px;
+
+}
+
+.SkillList svg {
+
+	width: 40px;
+	height: 40px;
+	fill: white;
+
+}
+
+.SkillList > div {
+
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(110px, 1fr))
+
+}
+
+.SkillList > div div {
+
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #ffffff30;
+
+}
+
+.SkillList h4 {
+
+	margin: 10px 0 0 0;
+	font-size: .9rem;
+	line-height: 1.4rem;
+
+}

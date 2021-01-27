@@ -1,0 +1,29 @@
+/* ToolsList Code here */
+
+.ToolsList {
+
+	padding: 20px;
+	margin: 20px;
+
+}
+
+.ToolsList > div {
+
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+
+}
+
+.ToolsList > div > div {
+
+	text-align: center;
+	border: 1px solid #ffffff30;
+
+}
+
+.ToolsList div img {
+
+	width: 100%;
+
+}
