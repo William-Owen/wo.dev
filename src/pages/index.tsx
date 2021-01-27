@@ -32,7 +32,7 @@ const IndexPage = () => (
 
 				<div>
 
-					<a href="https://hulp.io/">Hulo.io</a>
+					<a href="http://hulo.io.">Hulo.io</a>
 					<p>A small human log command line tool</p>
 
 				</div>
