@@ -261,7 +261,7 @@ export default [
 		type: ["developer"],
 	},
 	{
-		name: "Electrpm",
+		name: "Electron",
 		icon: "Electron",
 		type: ["developer"],
 	},
