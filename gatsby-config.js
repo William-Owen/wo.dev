@@ -13,9 +13,44 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 		},
-		`gatsby-plugin-react-svg`,
+		"gatsby-plugin-react-svg",
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `skills`,
+				path: `${__dirname}/src/data/skills/`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `blog`,
+				path: `${__dirname}/src/data/blog/`,
+			},
+		},
+		"gatsby-remark-source-name",
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				commonmark: true,
+				footnotes: true,
+				pedantic: true,
+				gfm: true,
+				plugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 950,
+							linkImagesToOriginal: false,
+							backgroundColor: "transparent",
+						},
+
+					},
+				],
+			},
+		},
 		{
 			resolve: `gatsby-plugin-layout`,
 			options: {

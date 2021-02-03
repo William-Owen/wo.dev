@@ -9,9 +9,9 @@
 
 .SkillList svg {
 
-	width: 40px;
-	height: 40px;
-	fill: white;
+	width: 24px;
+	height: 24px;
+	fill: #ffffff40;
 
 }
 
@@ -19,22 +19,76 @@
 
 	display: grid;
 	gap: 10px;
-	grid-template-columns: repeat(auto-fill, minmax(110px, 1fr))
-
-}
-
-.SkillList > div div {
-
-	text-align: center;
-	padding: 10px;
-	border: 1px solid #ffffff30;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
 
 }
 
 .SkillList h4 {
 
-	margin: 10px 0 0 0;
+	margin: 0 0 0 5px;
 	font-size: .9rem;
 	line-height: 1.4rem;
+
+}
+
+.skill {
+	display: flex;
+	flex-direction: row;
+	gap:10px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.skill {
+
+	perspective: 1000px;
+	padding: 10px;
+	border: 1px solid #ffffff30;
+	cursor: pointer;
+
+}
+
+.SkillList nav {
+
+	margin: 20px 0;
+
+}
+
+.SkillList nav h4 {
+
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 10px;
+	margin: 0
+
+}
+
+.SkillList nav div {
+
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 10px;
+	text-transform: capitalize;
+	font-weight: 200;
+	cursor: pointer;
+	color: var(--color-links);
+	border-right: 1px solid #ffffff30;
+	line-height: 1rem;
+
+}
+
+.SkillList nav div:last-child {
+
+	padding-right: 0;
+	margin-right: 0;
+	border-right: none;
+
+}
+
+nav div:hover {
+
+	color: rgb(255, 115, 185);
+	text-decoration: underline;
+	text-decoration-color: rgb(245, 158, 201);
 
 }

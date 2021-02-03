@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+	<svg viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+
+	<g transform="matrix(1,0,0,1,0,-155)">
+		<g>
+			<g transform="matrix(0.36168,0,0,0.413032,17.4846,126.819)">
+				<circle cx="587.047" cy="455.609" r="190.21" style="fill:url(#_Linear1);"/>
+			</g>
+			<g transform="matrix(0.762018,0,0,0.858116,-870.501,-87.4075)">
+				<path d="M1443.94,377.39L1352.63,560.015L1307.19,469.141L1261.75,560.015L1170.44,377.39L1443.94,377.39Z" style="fill:url(#_Linear2);"/>
+			</g>
+			<g transform="matrix(0.36168,0,0,0.413032,17.4846,126.819)">
+				<path d="M433.633,567.961C410.494,536.491 396.837,497.632 396.837,455.609C396.837,350.629 482.067,265.399 587.047,265.399C587.047,265.399 433.633,567.961 433.633,567.961Z" style="fill:url(#_Radial3);"/>
+			</g>
+		</g>
+	</g>
+
+	<defs>
+
+		<linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0.454769" gradientUnits="userSpaceOnUse" gradientTransform="matrix(380.42,127.76,-226.894,214.207,396.837,443.154)"><stop offset="0" style="stop-color:#1b89fb;stop-opacity:1"/><stop offset="1" style="stop-color:#0367e1;stop-opacity:1"/></linearGradient>
+		<linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="-0.26041" gradientUnits="userSpaceOnUse" gradientTransform="matrix(265.253,101.603,-37.4526,277.954,1160.41,348.256)"><stop offset="0" style="stop-color:#ca89a5;stop-opacity:1"/><stop offset="0" style="stop-color:#b43075;stop-opacity:1"/><stop offset="1" style="stop-color:#d534dd;stop-opacity:1"/></linearGradient>
+		<radialGradient id="_Radial3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(122.271,125.112,-124.784,122.593,575.929,455.609)"><stop offset="0" style="stop-color:#d284ff;stop-opacity:1"/><stop offset="1" style="stop-color:#d680fc;stop-opacity:1"/></radialGradient>
+
+	</defs>
+
+</svg>

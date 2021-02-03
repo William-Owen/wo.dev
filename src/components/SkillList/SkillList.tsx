@@ -1,16 +1,50 @@
-import React from "react"
+import React, { useMemo, useState } from "react"
 import clsx from "clsx";
 import style from "./SkillList.module.css"
 import _ from "lodash"
 import SkillIcon from "../SkillIcon";
+interface ISkillObject {
 
-interface SkillListProps {
+	name: string
+	icon: string
+	type: string[]
+	content: string
 
-	data: object
+}
+interface ISkillListProps {
+
+	data: ISkillObject[]
 
 }
 
-const SkillList: React.FC<SkillListProps> = ({data}) => {
+const SkillList: React.FC<ISkillListProps> = ({data: allSkillData}) => {
+
+	const [filteredSkillData, setFilteredSkillData] = useState(_.sortBy(allSkillData, ['name']));
+
+	// Collect all the skill types from the skills array
+
+	const allSkillTypes = useMemo(()=>{
+
+		const skillTypes = new Set()
+
+		allSkillData.forEach(skill => {
+
+			if (skill.type) {
+
+				skill.type.forEach(type => {
+
+					skillTypes.add(type)
+
+				})
+
+			}
+
+		})
+
+		return Array.from(skillTypes)
+
+
+	}, allSkillData )
 
 	const className = clsx([
 
@@ -19,7 +53,28 @@ const SkillList: React.FC<SkillListProps> = ({data}) => {
 
 	])
 
-	const dataSorted = _.sortBy(data, ['name'])
+	const handelFilterSkills = (e) => {
+
+		const skillTypeFilterTerm = e.target.dataset.type
+
+		const newData = allSkillData.filter(skill => {
+
+			if (skill.type) {
+				return skill.type.includes(skillTypeFilterTerm)
+			}
+			return false
+
+		})
+
+		setFilteredSkillData(newData)
+
+	}
+
+	const handelResetFilterSkills = () => {
+
+		setFilteredSkillData(allSkillData)
+
+	}
 
 	return (
 
@@ -27,11 +82,19 @@ const SkillList: React.FC<SkillListProps> = ({data}) => {
 
 			<h2>Skill Set</h2>
 
+			<nav>
+
+				<h4>Filter:</h4>
+				<div onClick={handelResetFilterSkills}>Show all</div>
+				{allSkillTypes.map(type=><div onClick={handelFilterSkills} data-type={type}>{type}</div>)}
+
+			</nav>
+
 			<div>
 
-				{dataSorted.map(skill=>(
+				{filteredSkillData.map(skill=>(
 
-					<div>
+					<div className={style.skill}>
 
 						<SkillIcon icon={skill.icon} />
 						<h4>{skill.name}</h4>

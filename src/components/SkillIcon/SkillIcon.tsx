@@ -82,6 +82,7 @@ import Ghost from "./icons/ghost.svg"
 import Ngrok from "./icons/ngrok.svg"
 import Python from "./icons/python.svg"
 import Microsoftteams from "./icons/microsoftteams.svg"
+import Reaper from "./icons/reaper.svg"
 interface SkillIconProps {
 
 	icon: string
@@ -90,6 +91,7 @@ interface SkillIconProps {
 
 const SkillIcon: React.FC<SkillIconProps> = ({icon}) => {
 
+	if (icon==="Reaper") {return <Reaper />}
 	if (icon==="Microsoftteams") {return <Microsoftteams />}
 	if (icon==="Python") {return <Python />}
 	if (icon==="Ngrok") {return <Ngrok />}
@@ -172,7 +174,7 @@ const SkillIcon: React.FC<SkillIconProps> = ({icon}) => {
 	if (icon==="RAD") {return <RADIcon />}
 	if (icon==="Remote") {return <RemoteIcon />}
 	if (icon==="LoDash") {return <LoDashIcon />}
-	return <p>{icon} not found</p>
+	return <p>Icon '{icon}' not found</p>
 }
 
 export default SkillIcon;

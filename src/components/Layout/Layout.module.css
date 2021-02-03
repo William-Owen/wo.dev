@@ -4,25 +4,35 @@
 * {
 
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
 }
 
 html,
 body {
 
-	background: #363b40;
+	background: #17191B;
 	color: #dedede;
 	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-stroke: 0.45px;
 	-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
 
+	--color-links: #a3c7ff;
+	--var-logo-blur: 100px
 }
 
 h1, h2, h3, h4, h5 {
 
 	font-weight: 100;
+	line-height: 1.2;
+	margin-bottom: 2rem;
 
 }
 
@@ -31,17 +41,23 @@ a:link,
 a:visited,
 a:hover {
 
-	color: #8ab4f8;
+	color: var(--color-links);
 	text-decoration: none;
+
+}
+
+p {
+
+	margin-bottom: 2rem;
+
 }
 
 p,
 td {
 
-	line-height: 1.58;
 	letter-spacing: -.004em;
 	font-weight: 100;
-
+	line-height: 1.6em;
 }
 
 strong {

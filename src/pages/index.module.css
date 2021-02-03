@@ -17,6 +17,12 @@
 
 }
 
+section {
+
+	padding: 60px 0;
+
+}
+
 .links p {
 
 	margin: 0;
@@ -36,5 +42,141 @@
 	margin-bottom: 0;
 	padding-bottom: 0;
 	border-bottom: none;
+
+}
+
+.particles {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+
+}
+
+.mainLogo {
+
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("/mountains_2.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+}
+
+.fade {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, #17191B00 0%, #17191B00 60%, #17191B 100%);
+	width: 100%;
+	height: 100%;
+
+}
+
+.logo {
+
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	padding: 40px;
+
+}
+
+.logo svg {
+
+	width: 100%;
+	animation: colorRotate 3s alternate infinite;
+	max-width: 400px;
+
+}
+
+.logo svg.lights {
+
+	width: 100%;
+	max-width: 800px;
+	animation: colorRotateAndBlur 3s alternate infinite;
+	opacity: 0.5;
+	position: absolute;
+	top: -30%;
+	left: 20%;
+
+}
+
+.mainLogo h1 {
+
+	font-family: nunito, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 2.5rem;
+	margin: 80px 0 20px 0;
+	letter-spacing: -0.03em;
+	width: 100%;
+	border-top: 1px solid #ffffff15;
+	border-bottom: 1px solid #ffffff15;
+	padding: 20px 0;
+
+}
+
+.mainLogo h2 {
+
+	margin: 0;
+	font-family: nunito, sans-serif;
+	font-weight: 200;
+	font-size: 1.5rem;
+	font-style: normal;
+	color: #bbb;
+
+}
+
+.siteTitle {
+
+	position: absolute;
+	top: calc(50% + 100px);
+
+}
+
+@keyframes colorRotateAndBlur {
+
+	0% {
+		filter: hue-rotate(0deg) blur(var(--var-logo-blur));
+	}
+
+	100% {
+		filter: hue-rotate(360deg) blur(var(--var-logo-blur));
+	}
+
+}
+
+@keyframes colorRotate {
+
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+
+}
+
+h1 {
+
+	font-size: 2.5rem;
+
+}
+
+h2 {
+
+	margin-top: 4rem;
+	font-size: 1.8rem;
 
 }

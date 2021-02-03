@@ -2,76 +2,152 @@ import React from "react"
 import Page from "../components/Page"
 import SkillList from "../components/SkillList"
 import styles from "./index.module.css"
-import skills from "../data/skills"
 import ToolsList from "../components/ToolsList"
+import { graphql } from "gatsby"
+import { motion, useViewportScroll, useTransform } from "framer-motion"
+import Logo from "../images/wo_dev_transparent.inline.svg"
+import { reduce } from "lodash"
 
-const IndexPage = () => (
+const SiteTitleDiv = ({children}) => {
 
-	<>
+	const { scrollY } = useViewportScroll()
+	const opacityValue = useTransform(scrollY, value => value / 400 )
 
-		<Page>
+	return <motion.div className={styles.siteTitle} style={{ opacity: opacityValue, transform: `translateY(-${scrollY}px)` }}>{children}</motion.div>
 
-			<h1>wo.dev</h1>
+}
 
-			<p><strong>Hello</strong>, my name is William. I am a UK based contractor with over 20 years of commercial experience in web design and development.</p>
-			<p>I principally develop React applications, including user interface and experience design, for complex projects. I am very effective at working with stakeholders, building a development strategy and communicating ideas.</p>
+const IndexPage = ({data}) => {
 
-			<h2>Philosophy</h2>
+	const skillsData = data.allMarkdownRemark.edges.map(skill=>({
 
-			<p>The best solutions come from seeing design and development as a single medium through which we express an organizations ambitions. Finding the right approach means understanding, thinking, and communicating across domains.</p>
+		name: skill.node.frontmatter.title,
+		icon: skill.node.frontmatter.icon,
+		type: skill.node.frontmatter.type,
+		content: skill.node.html,
 
-		</Page>
+	}))
 
-		<SkillList data={skills} />
-		<ToolsList />
+	return (
 
-		<Page>
+		<>
 
-			<div className={styles.links}>
+			<section className={styles.mainLogo}>
 
-				<nav>
+				<div className={styles.fade} />
 
-					<h2>Side projects</h2>
+				<div className={styles.logo}>
 
-					<div>
+					<Logo role="presentation" alt="" />
+					<Logo role="presentation" alt="" className={styles.lights} />
 
-						<a href="https://www.reasonsleeps.com/">Reason Sleeps</a>
-						<p>A video game project written in C# using the open source game engine Godot.</p>
+				</div>
 
-					</div>
+				<SiteTitleDiv>
 
-					<div>
+					<h1>WILLIAM OWEN</h1>
+					<h2>Professional UI & UX design and development</h2>
 
-						<a href="https://deviantrobot.com/">Deviant Robot</a>
-						<p>A website and podcast celebrating ideas and imagination.</p>
+				</SiteTitleDiv>
 
-					</div>
+			</section>
 
-					<div>
+			<Page>
 
-						<a href="http://hulo.io.">Hulo.io</a>
-						<p>A small human log command line tool</p>
+				<section>
 
-					</div>
+					<h1><strong>Hello</strong><br />my name is William.</h1>
 
-				</nav>
+					<p>I am a UK based contractor with over 20 years of commercial experience in web design and development.</p>
+					<p>I principally develop React applications, including user interface and experience design, for complex projects. I am very effective at working with stakeholders, building a development strategy and communicating ideas.</p>
 
-				<nav>
+					<h2>Philosophy</h2>
 
-					<h2>Connect</h2>
+					<p>The best solutions come from seeing design and development as a single medium through which we express an organizations ambitions. Finding the right approach means understanding, thinking, and communicating across domains.</p>
 
-					<a href="mailto:enquiries@wo.dev">Contact Me</a>
-					<a href="https://www.linkedin.com/in/williamowenuk/">LinkedIn</a>
-					<a href="https://github.com/William-Owen">GitHub</a>
+				</section>
 
-				</nav>
+			</Page>
 
-			</div>
+			<SkillList data={skillsData} />
 
-		</Page>
+			<section>
 
-	</>
+				<ToolsList />
 
-)
+			</section>
+
+			<Page>
+
+				<div className={styles.links}>
+
+					<nav>
+
+						<h2>Side projects</h2>
+
+						<div>
+
+							<a href="https://www.reasonsleeps.com/">Reason Sleeps</a>
+							<p>A video game project written in C# using the open source game engine Godot.</p>
+
+						</div>
+
+						<div>
+
+							<a href="https://deviantrobot.com/">Deviant Robot</a>
+							<p>A website and podcast celebrating ideas and imagination.</p>
+
+						</div>
+
+						<div>
+
+							<a href="http://hulo.io">Hulo.io</a>
+							<p>A small human log command line tool</p>
+
+						</div>
+
+					</nav>
+
+					<nav>
+
+						<h2>Connect</h2>
+
+						<a href="mailto:enquiries@wo.dev">Contact Me</a>
+						<a href="https://www.linkedin.com/in/williamowenuk/">LinkedIn</a>
+						<a href="https://github.com/William-Owen">GitHub</a>
+
+					</nav>
+
+				</div>
+
+			</Page>
+
+		</>
+
+	)
+
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+	{
+		allMarkdownRemark(
+			filter: {
+				fields: {sourceName: {eq: "skills"}}},
+				sort: {order: DESC, fields: [frontmatter___title]}
+			) {
+			edges {
+				node {
+					frontmatter {
+						title,
+						icon,
+						type
+					}
+					html
+				}
+			}
+		}
+	}
+
+`
