@@ -5,7 +5,8 @@ type:
  - designer
  - media
  - photography
-yearsExperience: 20+
+preferred: true
+level: 3
 alsoSee:
 ---
 

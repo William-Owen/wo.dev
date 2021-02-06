@@ -1,5 +1,5 @@
 ---
-title: Search Engine Optimisation
+title: SEO
 icon: Search
 type:
  - business
@@ -7,4 +7,4 @@ yearsExperience: 20+
 alsoSee:
 ---
 
-Content pending
+Search Engine Optimisation

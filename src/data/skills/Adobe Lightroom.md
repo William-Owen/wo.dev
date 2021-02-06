@@ -3,7 +3,7 @@ title: Adobe Lightroom
 icon: Adobelightroomclassic
 type:
  - designer
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

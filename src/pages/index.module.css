@@ -4,7 +4,7 @@
 
 		display: flex;
 		flex-direction: row;
-		gap: 20px;
+		gap: 40px;
 
 	}
 
@@ -20,6 +20,19 @@
 section {
 
 	padding: 60px 0;
+
+}
+
+section.pastClients {
+
+	padding: 60px 0;
+
+}
+
+.links {
+
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -45,29 +58,30 @@ section {
 
 }
 
-.particles {
+.hero {
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 
 }
 
-.mainLogo {
+.logo {
 
-	overflow: hidden;
-	height: 100vh;
+	position: relative;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-image: url("/mountains_2.jpg");
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	max-width: 1200px;
+	padding: 40px;
+	flex-grow: 1;
+
+}
+
+.siteTitle {
+
+	flex: 1;
+	margin-bottom: 80px
 
 }
 
@@ -82,32 +96,24 @@ section {
 
 }
 
-.logo {
-
-	position: relative;
-	width: 100%;
-	max-width: 1200px;
-	padding: 40px;
-
-}
-
 .logo svg {
 
 	width: 100%;
-	animation: colorRotate 3s alternate infinite;
 	max-width: 400px;
+	opacity: 0.9;
 
 }
 
-.logo svg.lights {
+.logo .logoW {
 
-	width: 100%;
-	max-width: 800px;
-	animation: colorRotateAndBlur 3s alternate infinite;
-	opacity: 0.5;
-	position: absolute;
-	top: -30%;
-	left: 20%;
+	margin-right: -400px;
+	z-index: 800;
+
+}
+
+.logo .logoO {
+
+	mix-blend-mode: lighten;
 
 }
 
@@ -137,37 +143,6 @@ section {
 
 }
 
-.siteTitle {
-
-	position: absolute;
-	top: calc(50% + 100px);
-
-}
-
-@keyframes colorRotateAndBlur {
-
-	0% {
-		filter: hue-rotate(0deg) blur(var(--var-logo-blur));
-	}
-
-	100% {
-		filter: hue-rotate(360deg) blur(var(--var-logo-blur));
-	}
-
-}
-
-@keyframes colorRotate {
-
-	0% {
-		filter: hue-rotate(0deg);
-	}
-
-	100% {
-		filter: hue-rotate(360deg);
-	}
-
-}
-
 h1 {
 
 	font-size: 2.5rem;
@@ -178,5 +153,42 @@ h2 {
 
 	margin-top: 4rem;
 	font-size: 1.8rem;
+
+}
+
+.pastClients {
+
+	background: #00000010;
+	margin: 60px;
+
+}
+
+.pastClients h2 {
+
+	text-align: center;
+
+}
+
+.pastClients > div {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 120px;
+	padding: 80px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.pastClients svg{
+
+	min-width: 170px;
+	max-width: 230px;
+	display: block;
+	flex: 1;
+	fill: #ffffff30;
 
 }

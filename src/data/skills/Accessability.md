@@ -5,7 +5,8 @@ icon: W3C
 type:
  - business
  - principles
-yearsExperience: 20+
+level: 3
+preferred: true
 alsoSee:
  - responsive-design
  - sort-site

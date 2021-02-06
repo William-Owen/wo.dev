@@ -6,7 +6,8 @@ type:
  - media
  - video
  - audio
-yearsExperience: 20+
+level: 2
+currentlyPreferred: DaVinci Resolve
 alsoSee:
 ---
 

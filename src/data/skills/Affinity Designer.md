@@ -3,7 +3,8 @@ title: Affinity Designer
 icon: Affinitydesigner
 type:
  - designer
-yearsExperience: 20+
+level: 3
+preferred: true
 alsoSee:
 ---
 

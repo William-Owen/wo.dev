@@ -15,7 +15,7 @@
 
 }
 
-.SkillList > div {
+.SkillList .skillCollection {
 
 	display: grid;
 	gap: 10px;
@@ -31,19 +31,27 @@
 
 }
 
+.SkillList .Page {
+
+	padding-left: 0
+
+}
+
 .skill {
+
 	display: flex;
 	flex-direction: row;
 	gap:10px;
 	align-items: center;
 	justify-content: flex-start;
+
 }
 
 .skill {
 
 	perspective: 1000px;
 	padding: 10px;
-	border: 1px solid #ffffff30;
+	border: 1px solid var(--color-lines);
 	cursor: pointer;
 
 }

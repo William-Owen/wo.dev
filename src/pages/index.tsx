@@ -4,18 +4,14 @@ import SkillList from "../components/SkillList"
 import styles from "./index.module.css"
 import ToolsList from "../components/ToolsList"
 import { graphql } from "gatsby"
-import { motion, useViewportScroll, useTransform } from "framer-motion"
-import Logo from "../images/wo_dev_transparent.inline.svg"
-import { reduce } from "lodash"
-
-const SiteTitleDiv = ({children}) => {
-
-	const { scrollY } = useViewportScroll()
-	const opacityValue = useTransform(scrollY, value => value / 400 )
-
-	return <motion.div className={styles.siteTitle} style={{ opacity: opacityValue, transform: `translateY(-${scrollY}px)` }}>{children}</motion.div>
-
-}
+import WTGLogo from "../images/companies/wtg.svg"
+import TescoLogo from "../images/companies/Tesco_Logo.svg"
+import JMLogo from "../images/companies/JM.svg"
+import SpindriftLogo from "../images/companies/SpindriftLogo.svg"
+import PlayLogo from "../images/companies/play.svg"
+import ImmediateMedia from "../images/companies/Immediate-Media.svg"
+import RamesysLogo from "../images/companies/Ramesys.svg"
+import LSCGroupLogo from "../images/companies/lsc.svg"
 
 const IndexPage = ({data}) => {
 
@@ -32,42 +28,44 @@ const IndexPage = ({data}) => {
 
 		<>
 
-			<section className={styles.mainLogo}>
+			<section className={styles.hero}>
 
-				<div className={styles.fade} />
+				<Page>
 
-				<div className={styles.logo}>
+					<h1><strong>Hello</strong><br />my name is William.</h1>
 
-					<Logo role="presentation" alt="" />
-					<Logo role="presentation" alt="" className={styles.lights} />
+					<p>I am a <strong>web design</strong> and <strong>development</strong> contractor with over 25 years of commercial experience, based in the UK. I principally develop <strong>React</strong> applications, including <strong>user interface</strong> and <strong>experience design</strong>, for complex projects.</p>
 
-				</div>
-
-				<SiteTitleDiv>
-
-					<h1>WILLIAM OWEN</h1>
-					<h2>Professional UI & UX design and development</h2>
-
-				</SiteTitleDiv>
+				</Page>
 
 			</section>
 
 			<Page>
 
-				<section>
+				<h2>Philosophy</h2>
 
-					<h1><strong>Hello</strong><br />my name is William.</h1>
-
-					<p>I am a UK based contractor with over 20 years of commercial experience in web design and development.</p>
-					<p>I principally develop React applications, including user interface and experience design, for complex projects. I am very effective at working with stakeholders, building a development strategy and communicating ideas.</p>
-
-					<h2>Philosophy</h2>
-
-					<p>The best solutions come from seeing design and development as a single medium through which we express an organizations ambitions. Finding the right approach means understanding, thinking, and communicating across domains.</p>
-
-				</section>
+				<p>Finding the right solution for your project come from seeing technology, design and art as a single medium. Finding the right approach means understanding the problem and then thinking and communicating across domains.</p>
 
 			</Page>
+
+			<section className={styles.pastClients}>
+
+				<h2>Some great companies I have worked with</h2>
+
+				<div>
+
+					<WTGLogo />
+					<TescoLogo />
+					<JMLogo />
+					<SpindriftLogo />
+					<PlayLogo />
+					<ImmediateMedia />
+					<RamesysLogo />
+					<LSCGroupLogo />
+
+				</div>
+
+			</section>
 
 			<SkillList data={skillsData} />
 

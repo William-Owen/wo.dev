@@ -83,6 +83,10 @@ import Ngrok from "./icons/ngrok.svg"
 import Python from "./icons/python.svg"
 import Microsoftteams from "./icons/microsoftteams.svg"
 import Reaper from "./icons/reaper.svg"
+import DavinciResolve from "./icons/davinciresolve.svg"
+import Philosophy from "./icons/philosophy.svg"
+import CriticalThinking from "./icons/thinking.svg"
+import Communication from "./icons/chat.svg"
 interface SkillIconProps {
 
 	icon: string
@@ -91,6 +95,10 @@ interface SkillIconProps {
 
 const SkillIcon: React.FC<SkillIconProps> = ({icon}) => {
 
+	if (icon==="Communication") {return <Communication />}
+	if (icon==="Philosophy") {return <Philosophy />}
+	if (icon==="CriticalThinking") {return <CriticalThinking />}
+	if (icon==="DavinciResolve") {return <DavinciResolve />}
 	if (icon==="Reaper") {return <Reaper />}
 	if (icon==="Microsoftteams") {return <Microsoftteams />}
 	if (icon==="Python") {return <Python />}

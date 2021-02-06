@@ -3,7 +3,7 @@ title: Adobe Typekit
 icon: Adobetypekit
 type:
  - designer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

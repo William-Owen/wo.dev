@@ -3,6 +3,7 @@ import clsx from "clsx";
 import style from "./SkillList.module.css"
 import _ from "lodash"
 import SkillIcon from "../SkillIcon";
+import Page from "../Page";
 interface ISkillObject {
 
 	name: string
@@ -80,7 +81,19 @@ const SkillList: React.FC<ISkillListProps> = ({data: allSkillData}) => {
 
 		<div className={className}>
 
-			<h2>Skill Set</h2>
+			<Page className={style.Page}>
+
+				<h2>Skill Set</h2>
+
+				<p>I have tried to evaluate my confidence in relying on a skill in a commercial context. To try and mitigate the <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning Kruger effect</a> the scale is kept very simple, with half steps applied if needed. </p>
+
+				<ol>
+					<li><strong>Baseline</strong> - Able to use the common features, functions or concepts. Might needs some guidance for more advanced work, or might need more time to solve problems.</li>
+					<li><strong>Intermediate</strong> - Able use more intermediate features, functions or concepts. Able to work alone for most tasks, may need time to understand advanced concepts.</li>
+					<li><strong>Experienced</strong> - Confident in the use of most advanced features, functions or concepts. Able work alone, to troubleshoot and mentor others.</li>
+				</ol>
+
+			</Page>
 
 			<nav>
 
@@ -90,7 +103,7 @@ const SkillList: React.FC<ISkillListProps> = ({data: allSkillData}) => {
 
 			</nav>
 
-			<div>
+			<div className={style.skillCollection}>
 
 				{filteredSkillData.map(skill=>(
 
