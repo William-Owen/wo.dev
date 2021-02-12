@@ -45,7 +45,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
 					<Link to="/skills">Skill Set</Link>
 					<Link to="/projects">Projects</Link>
 					<Link to="/uses">/uses</Link>
-					<Link to="/blog">Blog</Link>
+					{/* <Link to="/blog">Blog</Link> */}
 
 				</nav>
 
