@@ -1,5 +1,4 @@
 import React from "react"
-import clsx from "clsx";
 import AppleIcon from "./icons/apple.svg"
 import Css3Icon from "./icons/css3.svg"
 import Csharp from "./icons/csharp.svg"
@@ -87,6 +86,7 @@ import DavinciResolve from "./icons/davinciresolve.svg"
 import Philosophy from "./icons/philosophy.svg"
 import CriticalThinking from "./icons/thinking.svg"
 import Communication from "./icons/chat.svg"
+import Jsx from "./icons/jsx.svg"
 interface SkillIconProps {
 
 	icon: string
@@ -95,6 +95,7 @@ interface SkillIconProps {
 
 const SkillIcon: React.FC<SkillIconProps> = ({icon}) => {
 
+	if (icon==="Jsx") {return <Jsx />}
 	if (icon==="Communication") {return <Communication />}
 	if (icon==="Philosophy") {return <Philosophy />}
 	if (icon==="CriticalThinking") {return <CriticalThinking />}

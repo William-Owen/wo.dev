@@ -3,7 +3,8 @@ title: Webpack
 icon: Webpack
 type:
  - developer
-yearsExperience: 20+
+level: 2
+preferred: true
 alsoSee:
 ---
 

@@ -3,7 +3,7 @@ title: Git
 icon: Git
 type:
  - developer
-yearsExperience: 20+
+level: 2.5
 alsoSee:
 ---
 

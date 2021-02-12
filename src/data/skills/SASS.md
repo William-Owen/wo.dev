@@ -3,7 +3,8 @@ title: SASS
 icon: Sass
 type:
  - developer
-yearsExperience: 20+
+level: 3
+preferred: true
 alsoSee:
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Balsamiq
 icon: Balsamiq
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

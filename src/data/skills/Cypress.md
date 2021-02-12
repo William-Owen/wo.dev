@@ -4,7 +4,8 @@ icon: Cypress
 type:
  - developer
  - testing
-yearsExperience: 20+
+level: 2
+preferred: true
 alsoSee:
 ---
 

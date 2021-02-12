@@ -3,7 +3,7 @@ title: Sketch
 icon: Sketch
 type:
  - designer
-yearsExperience: 20+
+level: 2.5
 alsoSee:
 ---
 

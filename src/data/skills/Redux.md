@@ -3,7 +3,7 @@ title: Redux
 icon: Redux
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

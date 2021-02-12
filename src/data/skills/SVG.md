@@ -3,7 +3,9 @@ title: SVG
 icon: SVG
 type:
  - designer
-yearsExperience: 20+
+level: 3
+preferred: true
+preferred: true
 alsoSee:
 ---
 

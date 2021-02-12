@@ -4,7 +4,7 @@ icon: Omnigraffle
 type:
  - designer
  - business
-yearsExperience: 20+
+level: 2.5
 alsoSee:
 ---
 

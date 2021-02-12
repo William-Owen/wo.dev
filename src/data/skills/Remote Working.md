@@ -1,7 +1,8 @@
 ---
 title: Remote Working
 icon: Remote
-yearsExperience: 20+
+level: 3
+preferred: true
 alsoSee:
 ---
 

@@ -1,0 +1,38 @@
+/* PastHeroClients Code here */
+
+.PastHeroClients {
+
+	background: #00000010;
+	margin: 60px;
+}
+
+.PastHeroClients h2 {
+
+	text-align: center;
+
+}
+
+.PastHeroClients > div {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 80px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.PastHeroClients svg{
+
+	min-width: 170px;
+	max-width: 230px;
+	display: block;
+	flex: 1;
+	fill: #ffffff30;
+	margin: 60px
+
+}
+

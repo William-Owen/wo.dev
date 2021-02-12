@@ -2,33 +2,43 @@
 
 .ToolsList > div {
 
-	padding: 20px;
+	/* background-color: #00000020; */
 	margin: 20px;
+	/* padding: 20px; */
 	position: static;
-	display: flex;
-	overflow: scroll;
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-}
-
-.ToolsList > div {
-
 	text-align: center;
-	border: 1px solid var(--color-lines);
-	display: flex;
-	overflow: scroll;
-	width: 100%;
-	margin-right: 2px;
-	flex: 0 0 auto;
-	background-color: #00000020;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 
 }
 
-.ToolsList div img {
+.ToolsList div div {
 
 	width: 100%;
+	border: 1px solid var(--color-lines);
+	transition: transform 200ms ease-in-out, background 200ms ease-in-out;
+	background: #1D1D2100;
+
+}
+
+.ToolsList img {
+
+	max-width: 100%;
 	filter: grayscale();
+
+}
+
+.ToolsList div div:hover {
+
+	transform: scale(1.1);
+	z-index: 2000;
+	background: #1D1D21ff;
+}
+
+.ToolsList div div:hover img {
+
+	filter: none;
 
 }
 

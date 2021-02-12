@@ -3,7 +3,7 @@ title: CSS
 icon: Css3
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

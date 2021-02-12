@@ -3,7 +3,7 @@ title: Videography
 icon: Videography
 type:
  - designer
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

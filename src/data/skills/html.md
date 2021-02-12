@@ -3,7 +3,7 @@ title: HTML
 icon: Html5
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
  - jsx
  - xhtml

@@ -1,7 +1,7 @@
 ---
 title: Scrum
 icon: Scrum
-yearsExperience: 20+
+level: 2.5
 alsoSee:
 ---
 

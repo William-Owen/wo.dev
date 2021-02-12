@@ -4,7 +4,7 @@ icon: Reaper
 type:
  - designer
  - audio
-yearsExperience: 10+
+level: 2
 alsoSee:
 ---
 

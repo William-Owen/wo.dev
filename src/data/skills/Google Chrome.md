@@ -3,7 +3,7 @@ title: Google Chrome
 icon: Googlechrome
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

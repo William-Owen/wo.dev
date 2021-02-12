@@ -3,7 +3,7 @@ title: Postman
 icon: Postman
 type:
  - developer
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

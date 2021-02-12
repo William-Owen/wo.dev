@@ -3,7 +3,7 @@ title: Slack
 icon: Slack
 type:
  - business
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

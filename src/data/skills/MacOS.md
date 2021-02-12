@@ -3,7 +3,7 @@ title: MacOS
 icon: Apple
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

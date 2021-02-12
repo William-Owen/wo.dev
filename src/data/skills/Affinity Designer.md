@@ -1,4 +1,5 @@
 ---
+slug: affinity-designer
 title: Affinity Designer
 icon: Affinitydesigner
 type:

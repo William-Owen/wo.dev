@@ -5,7 +5,8 @@ type:
  - designer
  - video
  - media
-yearsExperience: 1
+level: 2
+preferred: true
 alsoSee:
 ---
 

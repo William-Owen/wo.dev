@@ -4,7 +4,7 @@ icon: Jest
 type:
  - developer
  - testing
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

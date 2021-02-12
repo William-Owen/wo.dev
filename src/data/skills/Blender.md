@@ -3,7 +3,7 @@ title: Blender
 icon: Blender
 type:
  - designer
-yearsExperience: 20+
+level: 1
 alsoSee:
 ---
 

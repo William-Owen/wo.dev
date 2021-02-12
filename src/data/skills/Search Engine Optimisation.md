@@ -3,7 +3,7 @@ title: SEO
 icon: Search
 type:
  - business
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

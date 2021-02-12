@@ -1,7 +1,7 @@
 ---
 title: Stoplight
 icon: Stoplight
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

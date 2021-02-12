@@ -4,10 +4,13 @@ import style from "./SkillList.module.css"
 import _ from "lodash"
 import SkillIcon from "../SkillIcon";
 import Page from "../Page";
+import LevelIndicator from "../LevelIndicator";
 interface ISkillObject {
 
-	name: string
+	title: string
 	icon: string
+	level: number
+	preferred: boolean
 	type: string[]
 	content: string
 
@@ -85,12 +88,14 @@ const SkillList: React.FC<ISkillListProps> = ({data: allSkillData}) => {
 
 				<h2>Skill Set</h2>
 
-				<p>I have tried to evaluate my confidence in relying on a skill in a commercial context. To try and mitigate the <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning Kruger effect</a> the scale is kept very simple, with half steps applied if needed. </p>
+				<p>To try and mitigate the <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning Kruger effect</a> I have tried to evaluate my confidence in relying on a skill in a commercial context. The highest confidence is not attempting to indicate unparalleled knowledge, only high confident that I can deliver what a client might expect from someone experienced in this area to deliver quickly, to a processional standard and without assistance. </p>
 
-				<ol>
-					<li><strong>Baseline</strong> - Able to use the common features, functions or concepts. Might needs some guidance for more advanced work, or might need more time to solve problems.</li>
-					<li><strong>Intermediate</strong> - Able use more intermediate features, functions or concepts. Able to work alone for most tasks, may need time to understand advanced concepts.</li>
-					<li><strong>Experienced</strong> - Confident in the use of most advanced features, functions or concepts. Able work alone, to troubleshoot and mentor others.</li>
+				<ol className={style.levelKey}>
+
+					<li><LevelIndicator level={1} /> <div><strong>Baseline</strong> - Able to use the common features, functions or concepts. Might need guidance for more advanced work, or might need more time to solve problems.</div></li>
+					<li><LevelIndicator level={2} /> <div><strong>Intermediate</strong> - Able use more intermediate features, functions or concepts. Able to work alone for most tasks, may need time to understand advanced concepts.</div></li>
+					<li><LevelIndicator level={3} /> <div><strong>Experienced</strong> - Confident in the use of most advanced features, functions or concepts. Able work alone, to troubleshoot and mentor others.</div></li>
+
 				</ol>
 
 			</Page>
@@ -105,16 +110,26 @@ const SkillList: React.FC<ISkillListProps> = ({data: allSkillData}) => {
 
 			<div className={style.skillCollection}>
 
-				{filteredSkillData.map(skill=>(
+				{filteredSkillData.map(skill=>{
 
-					<div className={style.skill}>
+					const skillClassName = clsx([
+						style.skill,
+						{[style.preferred]: skill.preferred}
+					])
 
-						<SkillIcon icon={skill.icon} />
-						<h4>{skill.name}</h4>
+					return (
 
-					</div>
+						<div className={skillClassName}>
 
-				))}
+							<SkillIcon icon={skill.icon} />
+							<h4>{skill.title}</h4>
+							<LevelIndicator className={style.level} level={skill.level} />
+
+						</div>
+
+					)
+
+				})}
 
 			</div>
 

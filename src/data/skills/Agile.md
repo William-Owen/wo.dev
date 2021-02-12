@@ -3,7 +3,7 @@ title: Agile
 icon: Agile
 type:
  - business
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

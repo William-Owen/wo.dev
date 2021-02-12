@@ -3,7 +3,7 @@ title: React Router
 icon: Reactrouter
 type:
  - developer
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

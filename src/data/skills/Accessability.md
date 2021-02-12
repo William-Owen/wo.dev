@@ -1,5 +1,4 @@
 ---
-slug: accessibility
 title: Accessibility
 icon: W3C
 type:
@@ -12,7 +11,7 @@ alsoSee:
  - sort-site
 ---
 
-Accessibility is a a critical consideration web creating
+Accessibility is a a critical consideration web creatingy
 applications. Not only do we want to make our applications
 accessible on a wide range of devices and input methods but
 we also want to ensure that people using a range of

@@ -3,7 +3,7 @@ title: Google Analytics
 icon: Googleanalytics
 type:
  - business
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

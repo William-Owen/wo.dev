@@ -4,7 +4,8 @@ icon: StoryBook
 type:
  - designer
  - developer
-yearsExperience: 20+
+level: 2.5
+preferred: true
 alsoSee:
 ---
 

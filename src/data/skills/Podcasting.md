@@ -1,7 +1,7 @@
 ---
 title: Podcasting
 icon: Podcast
-yearsExperience: 20+
+level: 3
 type:
  - audio
  - media

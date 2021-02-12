@@ -1,7 +1,7 @@
 ---
 title: Brand Development
 icon: Branding
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

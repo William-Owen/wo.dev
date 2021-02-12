@@ -4,7 +4,7 @@ icon: Photography
 type:
  - designer
  - media
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

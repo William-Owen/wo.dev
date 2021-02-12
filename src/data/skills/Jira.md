@@ -3,7 +3,7 @@ title: Jira
 icon: Jira
 type:
  - business
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

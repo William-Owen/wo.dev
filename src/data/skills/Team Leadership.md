@@ -3,7 +3,7 @@ title: Team Leadership
 icon: TeamLead
 type:
  - business
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

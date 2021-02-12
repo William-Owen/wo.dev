@@ -3,7 +3,7 @@ title: Babel
 icon: Babel
 type:
  - developer
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

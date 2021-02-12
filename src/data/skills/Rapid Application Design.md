@@ -1,8 +1,9 @@
 ---
 title: Rapid Application Design
 icon: RAD
-yearsExperience: 20+
+level: 3
 alsoSee:
+preferred: true
 ---
 
 Content pending

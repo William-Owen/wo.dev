@@ -3,7 +3,7 @@ title: Microsoft Teams
 icon: Microsoftteams
 type:
  - business
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

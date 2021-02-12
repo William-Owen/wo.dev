@@ -3,7 +3,7 @@ title: TypeScript
 icon: TypeScript
 type:
  - developer
-yearsExperience: 20+
+level: 2
 alsoSee:
 ---
 

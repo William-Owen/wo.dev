@@ -1,7 +1,7 @@
 ---
 title: Lodash
 icon: LoDash
-yearsExperience: 20+
+level: 3
 alsoSee:
 ---
 

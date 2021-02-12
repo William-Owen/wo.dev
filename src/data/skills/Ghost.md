@@ -3,7 +3,7 @@ title: Ghost
 icon: Ghost
 type:
  - developer
-yearsExperience: 20+
+level: 1
 alsoSee:
 ---
 

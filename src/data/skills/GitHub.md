@@ -3,7 +3,8 @@ title: GitHub
 icon: Github
 type:
  - developer
-yearsExperience: 20+
+level: 2.5
+preferred: true
 alsoSee:
 ---
 
