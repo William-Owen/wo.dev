@@ -1,6 +1,6 @@
 import React from "react"
 import clsx from "clsx";
-import style from "./PastHeroClients.module.css"
+import * as style from "./PastHeroClients.module.css"
 import WTGLogo from "./companies/wtg.svg"
 import TescoLogo from "./companies/Tesco_Logo.svg"
 import JMLogo from "./companies/JM.svg"

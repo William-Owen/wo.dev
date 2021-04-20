@@ -1,7 +1,7 @@
 import React from "react"
 import Page from "../components/Page"
 import SkillList from "../components/SkillList"
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 import ToolsList from "../components/ToolsList"
 import { graphql } from "gatsby"
 
@@ -45,8 +45,7 @@ export default IndexPage
 export const pageQuery = graphql`
 	{
 		allMarkdownRemark(
-			filter: {
-				fields: {sourceName: {eq: "skills"}}},
+
 				sort: {order: DESC, fields: [frontmatter___title]}
 			) {
 			edges {

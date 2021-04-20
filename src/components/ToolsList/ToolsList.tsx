@@ -1,6 +1,6 @@
 import React from "react"
 import clsx from "clsx";
-import style from "./ToolsList.module.css"
+import * as style from "./ToolsList.module.css"
 import AppleMacBookProImage from "../../images/tools/AppleMacbookPro.png"
 import Bose700Image from "../../images/tools/Bose700.png"
 import FocusriteScarlettSolo3Image from "../../images/tools/FocusriteScarlettSolo3.png"

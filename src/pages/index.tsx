@@ -1,8 +1,6 @@
 import React from "react"
 import Page from "../components/Page"
-import PastHeroClients from "../components/PastHeroClients"
-import styles from "./index.module.css"
-import logiMouse from "../images/logi_mouse.png"
+import * as styles from "./index.module.css"
 
 const IndexPage = () => {
 
@@ -16,23 +14,22 @@ const IndexPage = () => {
 
 					<h1><strong>Hello</strong><br />my name is William.</h1>
 
-					<p>I am a <strong>web design</strong> and <strong>development</strong> contractor with over 25 years of commercial experience, based in the UK. I principally develop <strong>React</strong> applications, including <strong>user interface</strong> and <strong>experience design</strong>, for complex projects.</p>
+					<p>I have been designing and building websites and web based applications commercial experience for over 25 years, based in the UK. At wo.dev; I hope to being my broad range of experience to your project.</p>
+
+					<h2>Principle services</h2>
+
+					<ul>
+						<li>Development project <strong>consultancy</strong></li>
+						<li>Front-end project <strong>architecture</strong> design</li>
+						<li>React front-end application <strong>development</strong></li>
+						<li><strong>User Experience</strong> design.</li>
+						<li><strong>User Interface</strong> design.</li>
+						<li><strong>Branding</strong> and <strong>creative design.</strong></li>
+					</ul>
 
 				</Page>
 
-				<img src={logiMouse} />
-
 			</section>
-
-			<Page>
-
-				<h2>Philosophy</h2>
-
-				<p>Finding the right solution for your project come from seeing technology, design and art as a single medium. Finding the right approach means understanding the problem and then thinking and communicating across domains.</p>
-
-			</Page>
-
-			<PastHeroClients />
 
 		</div>
 

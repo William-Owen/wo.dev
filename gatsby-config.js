@@ -6,6 +6,10 @@ module.exports = {
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-image`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
+		"gatsby-plugin-react-svg",
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -13,24 +17,27 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 		},
-		"gatsby-plugin-react-svg",
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `project`,
+				path: `${__dirname}/content/projects/`,
+			},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `skills`,
-				path: `${__dirname}/src/data/skills/`,
+				path: `${__dirname}/content/skills/`,
 			},
 		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `blog`,
-				path: `${__dirname}/src/data/blog/`,
+				path: `${__dirname}/content/blog/`,
 			},
 		},
-		"gatsby-remark-source-name",
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {

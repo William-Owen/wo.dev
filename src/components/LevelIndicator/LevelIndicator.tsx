@@ -1,6 +1,6 @@
 import React from "react"
 import clsx from "clsx";
-import style from "./LevelIndicator.module.css"
+import * as style from "./LevelIndicator.module.css"
 import Level05 from "./levels/level05.inline.svg"
 import Level1 from "./levels/level1.inline.svg"
 import Level15 from "./levels/level15.inline.svg"

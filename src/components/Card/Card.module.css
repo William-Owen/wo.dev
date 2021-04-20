@@ -1,0 +1,51 @@
+.Card,
+.Card:link,
+.Card:hover,
+.Card:active,
+.Card:visited {
+
+	--var-card-spacing: 1.5rem;
+	--var-card-negative-spacing: calc(var(--var-card-spacing) * -1);
+
+	display: block;
+	padding: var(--var-card-spacing);
+	background: #17171b;
+	color: var(--color-text)
+
+}
+
+.Card h3 {
+
+	margin: 0 0 0.5rem 0
+
+}
+
+.Card p {
+
+	margin: 0;
+
+}
+
+.CardImage {
+
+	margin: var(--var-card-negative-spacing) var(--var-card-negative-spacing) var(--var-card-spacing);
+}
+
+.Tags {
+
+	margin-top: 1rem
+
+}
+
+.Tags span{
+
+	display: inline-block;
+	padding: calc(0.7rem / 2) 0.5rem;
+	line-height: 0.7rem;
+	font-size: 0.7rem;
+	margin: 0 0.3rem 0.3rem 0;
+	border-radius: 6px;
+	background: #323237;
+	color: #fff
+
+}

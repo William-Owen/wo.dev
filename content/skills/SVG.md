@@ -5,7 +5,6 @@ type:
  - designer
 level: 3
 preferred: true
-preferred: true
 alsoSee:
 ---
 

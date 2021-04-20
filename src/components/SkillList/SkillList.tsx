@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react"
 import clsx from "clsx";
-import style from "./SkillList.module.css"
+import * as style from "./SkillList.module.css"
 import _ from "lodash"
 import SkillIcon from "../SkillIcon";
 import Page from "../Page";

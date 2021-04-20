@@ -1,0 +1,23 @@
+.projectListingSection {
+
+	padding: 60px
+
+}
+
+.projectListing {
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+	gap: 1rem;
+
+}
+
+.limitedExamples {
+
+	display: flex;
+	padding: 2rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}

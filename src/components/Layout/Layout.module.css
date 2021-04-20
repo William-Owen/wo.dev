@@ -130,6 +130,13 @@ footer {
 
 }
 
+.Layout {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
 .Layout > header {
 
 	display: flex;
@@ -139,10 +146,7 @@ footer {
 	padding: 60px;
 	width: 100%;
 	z-index: 10000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: var(--color-background);
+
 }
 
 .Layout > header nav {

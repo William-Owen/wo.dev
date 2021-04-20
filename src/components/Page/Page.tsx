@@ -1,6 +1,6 @@
 import React from "react"
 import clsx from "clsx";
-import style from "./Page.module.css"
+import * as style from "./Page.module.css"
 
 interface PageProps {
 

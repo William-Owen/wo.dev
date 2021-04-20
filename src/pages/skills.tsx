@@ -5,7 +5,7 @@ import SkillList from "../components/SkillList"
 
 const IndexPage = ({data}) => {
 
-	const skillsData = data.allMarkdownRemark.edges.map(skill=>({
+	const skillsData = data.allMarkdownRemark.edges.map((skill:object)=>({
 
 		... skill.node.frontmatter,
 		content: skill.node.html,
@@ -29,9 +29,9 @@ export default IndexPage
 export const pageQuery = graphql`
 	{
 		allMarkdownRemark(
-			filter: {
-				fields: {sourceName: {eq: "skills"}}},
-				sort: {order: DESC, fields: [frontmatter___title]}
+
+			sort: {order: DESC, fields: [frontmatter___title]}
+
 			) {
 			edges {
 				node {
