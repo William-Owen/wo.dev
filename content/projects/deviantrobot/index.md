@@ -1,5 +1,4 @@
 ---
-slug: /projects/deviant-robot
 projectTitle: Deviant Robot
 url: https://deviantrobot.com
 cardImage: ./cardImage-deviant-robot.jpg

@@ -1,5 +1,4 @@
 ---
-slug: /projects/deviant-cyberwolf
 projectTitle: Deviant Cyberwolf
 url: ~
 cardImage: ./cardImage-deviant-cyberwolf.jpg
@@ -25,7 +24,7 @@ Created Deviant as part of the Deviant Robot project Deviant Cyberwolf is a grou
 
 <figure class="block-image">
 
-![Duck & Elephant logo](./poster.jpeg)
+![An 80s style Cyberscape featuring the silhouette of a man with a question mark on his chest standing in front of the silhouette of a giant wolf](./poster.jpeg)
 
 <figcaption>
 
@@ -35,11 +34,13 @@ The tagline "Online and out of time" is a homage to the classic low budget tagli
 
 </figcaption>
 
+</figure>
+
 <div class="block-gallery">
 
 <figure>
 
-![Alt text here](./soundscape-app.jpeg)
+![The interface of an application designed to play audio, with number of music and audio FX files listed and the Deviant Cyberwolf logo in the top left hand corner.](./soundscape-app.jpeg)
 
 <figcaption>
 The Soundwave application was created in React and Electron using the Howl audio engine. It was used to enhance the game experience of the game by playing ambient and game relevant audio during events.
@@ -49,7 +50,7 @@ The Soundwave application was created in React and Electron using the Howl audio
 
 <figure>
 
-![Alt text here](./vhs-cover.jpeg)
+![A classic VHS cassette case inlay design featuring cover art that shows the dvm cyber wolf logo in a retro low-budget style](./vhs-cover.jpeg)
 
 <figcaption>
 The VSH cassette cover was created to support the 80s asthenic and ac as a case for the game cards.
@@ -59,18 +60,17 @@ The VSH cassette cover was created to support the 80s asthenic and ac as a case 
 
 <figure>
 
-![Alt text here](./vhs.jpg)
+![A photograph showing a real VHS cassette box with the cyber wolf in-lay.](./vhs.jpg)
 
 <figcaption>
 An early prototype, the imagery on the cover invokes a feeling of low budget 80s horror moves.
 </figcaption>
 
-
 </figure>
 
 <figure>
 
-![Alt text here](./game-set.jpeg)
+![A photograph of a real VHS cassette box featuring the cyber wolf in-lay as well as a number of cards depicting the Deviant Cyberwolf logo.](./game-set.jpeg)
 
 </figure>
 

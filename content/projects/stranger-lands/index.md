@@ -1,5 +1,4 @@
 ---
-slug: /projects/deviant-cyberwolf
 projectTitle: Stranger Lands
 url: ~
 cardImage: ./cardImage-strangerlands.jpg

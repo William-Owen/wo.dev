@@ -55,6 +55,12 @@ figcaption p:last-child {
 
 }
 
+.center {
+
+	text-align: center;
+
+}
+
 .block-white {
 
 	background: white;

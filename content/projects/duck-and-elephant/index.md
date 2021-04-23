@@ -1,5 +1,4 @@
 ---
-slug: /projects/deviant-cyberwolf
 projectTitle: Duck & Elephant
 url: ~
 cardImage: ./cardImage-duck-and-elephant.jpg
@@ -23,7 +22,7 @@ After discuss the brand with the owner I created the following creatives and bra
 
 <figure class="block-image block-white">
 
-![Duck & Elephant logo](./cardImage-duck-and-elephant.jpg)
+![Duck & Elephant logo Showing the stylised silhouette of an elephant with a stylised silhouette of a duck in front of it.](./cardImage-duck-and-elephant.jpg)
 
 <figcaption>
 
@@ -39,7 +38,7 @@ I felt that the tag line "Stories for everyone" neatly encapsulated the mission 
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-colour.jpg)
+![A colour palette, the colours are subtle but colourful](./duck-and-elehapnt-colour.jpg)
 
 <figcaption>
 I selected a colour pallet that was deliberately soft yet colourful; this would allow the bold and bright imagery of the children's books to stand out without clashing with the brand materials.
@@ -49,25 +48,25 @@ I selected a colour pallet that was deliberately soft yet colourful; this would 
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-full.jpg)
+![Duck & Elephant logo Showing the stylised silhouette of an elephant with a stylised silhouette of a duck in front of it.](./duck-and-elehapnt-full.jpg)
 
 </figure>
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-dark.jpg)
+![A dark version of the Duck & Elephant logo Showing the stylised silhouette of an elephant with a stylised silhouette of a duck in front of it.](./duck-and-elehapnt-dark.jpg)
 
 </figure>
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-device.jpg)
+![The Duck & Elephant logo](./duck-and-elehapnt-device.jpg)
 
 </figure>
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-full-alt.jpg)
+![The Duck & Elephant logo with a slightly different arrangement](./duck-and-elehapnt-full-alt.jpg)
 
 <figcaption>
 An alternative of the logo using more significant negative space an allowing for a more distinct silhouette.
@@ -77,13 +76,13 @@ An alternative of the logo using more significant negative space an allowing for
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-dark-alt.jpg)
+![A dark version Duck & Elephant logo with a slightly different arrangement](./duck-and-elehapnt-dark-alt.jpg)
 
 </figure>
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-one-color.jpg)
+![A single colour (black) version of the Duck & Elephant logo](./duck-and-elehapnt-one-color.jpg)
 
 <figcaption>
 A logo should always be effective in a single colour.
@@ -93,7 +92,7 @@ A logo should always be effective in a single colour.
 
 <figure>
 
-![Duck & Elephant logo](./duck-and-elehapnt-text-tag.jpg)
+![The tagline Stories for everyone](./duck-and-elehapnt-text-tag.jpg)
 
 </figure>
 

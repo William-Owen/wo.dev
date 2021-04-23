@@ -1,5 +1,4 @@
 import React from "react"
-import Page from "../components/Page"
 import * as styles from "./project.module.css"
 import { graphql, Link } from "gatsby"
 import "./blocks.css"

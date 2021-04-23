@@ -1,5 +1,4 @@
 ---
-slug: /projects/deviant-cyberwolf
 projectTitle: Mustardbet
 sideProject: false
 url: ~
