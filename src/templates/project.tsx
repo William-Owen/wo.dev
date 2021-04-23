@@ -2,6 +2,7 @@ import React from "react"
 import Page from "../components/Page"
 import * as styles from "./project.module.css"
 import { graphql, Link } from "gatsby"
+import "./blocks.css"
 
 const IndexPage = (props) => {
 
@@ -9,22 +10,21 @@ const IndexPage = (props) => {
 
 	const {markdownRemark: project} = props.data
 	const {projectTitle} = project.frontmatter
+	const {html} = project
 
 	return (
 
-		<div className={styles.projectPage}>
+		<article className={styles.projectPage}>
 
-			<section className={styles.hero}>
+			<header>
 
-				<Page>
+				<h1><span>Project</span>{projectTitle}</h1>
 
-					<h1><span>Project</span>{projectTitle}</h1>
+			</header>
 
-				</Page>
+			<main dangerouslySetInnerHTML={{__html: html}}></main>
 
-			</section>
-
-		</div>
+		</article>
 
 	)
 
@@ -33,11 +33,15 @@ const IndexPage = (props) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+
+  query BlogPostBySlug (
+
     $id: String!
     $previousPostId: String
     $nextPostId: String
+
   ) {
+
     site {
       siteMetadata {
         title
@@ -68,5 +72,7 @@ export const pageQuery = graphql`
         projectTitle
       }
     }
+
   }
+
 `

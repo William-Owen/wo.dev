@@ -19,13 +19,13 @@
 
 section {
 
-	padding: 60px 0;
+	padding: var(--var-base-padding) 0;
 
 }
 
 section.pastClients {
 
-	padding: 60px 0;
+	padding: var(--var-base-padding) 0;
 
 }
 

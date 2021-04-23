@@ -3,6 +3,7 @@ import clsx from "clsx";
 import * as style from "./Card.module.css"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Tags from "../Tags";
 
 interface CardProps {
 
@@ -43,11 +44,7 @@ const Card: React.FC<CardProps> = ({tags, link, className, title, abstract, imag
 				<p>{abstract}</p>
 			}
 
-			{tags &&
-				<div className={style.Tags}>
-					{tags.map(tag=>(<span>{tag}</span>))}
-				</div>
-			}
+			{tags && <Tags tags={tags} />}
 
 		</>
 

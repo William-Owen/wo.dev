@@ -57,7 +57,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
 			<footer>
 
 				<nav>
-					<a href="mailto:hello@wo.dev">Contact Me</a>
+					<a href="mailto:hello@wo.dev">Contact</a>
 					<a href="https://www.linkedin.com/in/williamowenuk/">LinkedIn</a>
 					<a href="https://github.com/William-Owen">GitHub</a>
 				</nav>

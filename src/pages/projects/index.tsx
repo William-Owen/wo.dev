@@ -21,8 +21,6 @@ const ProjectPage = (props) => {
 
 					<div>
 
-						<p>More information about these projects coming soon.</p>
-
 						<h2>Why so few examples?</h2>
 
 						<p>Unfortunately a large number of the projects I have work on are behind NDAs, are commercially sensitive or have security considerations as in the case of my work for the Ministry of Defence, Ministry of Justice and National Health Service.</p>
@@ -39,12 +37,10 @@ const ProjectPage = (props) => {
 
 					{allProjects.map(project=>{
 
-						console.info(project)
-
 						const {slug} = project.node.fields
 						const {projectTitle, abstract, heroScreen, tags} = project.node.frontmatter
 
-						return <Card key={slug} tags={tags} title={projectTitle} abstract={abstract} imageNode={heroScreen} />
+						return <Card key={slug} tags={tags} link={slug} title={projectTitle} abstract={abstract} imageNode={heroScreen} />
 
 					})}
 
@@ -71,6 +67,10 @@ export const pageQuery = graphql`
 				fields: {
 					source: {eq: "project"}
 				}
+			}
+			sort: {
+				order: ASC,
+				fields: frontmatter___weight
 			}
 
 		) {

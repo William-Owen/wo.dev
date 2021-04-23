@@ -32,7 +32,7 @@
 	display: block;
 	flex: 1;
 	fill: #ffffff30;
-	margin: 60px
+	margin: var(--var-base-padding);
 
 }
 
