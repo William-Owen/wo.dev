@@ -13,9 +13,19 @@
 
 }
 
+@media screen AND (max-width: 500px) {
+
+	.projectPage h2 {
+
+		font-size: 2rem;
+
+	}
+
+}
+
 .projectPage > header {
 
-	padding: 4rem
+	padding: var(--var-base-padding);
 
 }
 
@@ -25,11 +35,3 @@
 	display: block;
 
 }
-
-/* .projectPage > main {
-
-	margin: 0 auto;
-	max-width: 880px;
-	padding: var(--var-base-padding)
-
-} */

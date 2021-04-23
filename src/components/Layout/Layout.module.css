@@ -17,6 +17,8 @@
 	--var-logo-blur: 100px;
 	--var-base-padding: 4rem;
 
+	--var-base-break-width: 500px
+
 }
 
 @media screen AND (max-width: 500px) {
@@ -28,7 +30,6 @@
 	}
 
 }
-
 
 html,
 body {
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5 {
 
 	font-weight: 100;
 	line-height: 1.2;
-	margin-bottom: 2rem;
+	margin-bottom: var(--var-base-padding);
 
 }
 
@@ -214,13 +215,17 @@ footer nav a {
 @media screen and (min-width: 880px) {
 
 	.Layout > header nav {
+
 		flex-direction: row;
 		align-items: center;
 		justify-content: flex-end;
+
 	}
 
 	.Layout > header nav a {
+
 		margin: 0 10px 0;
+
 	}
 
 }

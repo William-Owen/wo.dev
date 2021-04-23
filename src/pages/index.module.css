@@ -145,6 +145,16 @@ section.pastClients {
 h1 {
 
 	font-size: 2.5rem;
+	margin: 0;
+}
+
+@media screen AND (max-width: 500px) {
+
+	h1 {
+
+		font-size: 2rem;
+
+	}
 
 }
 
@@ -152,6 +162,16 @@ h2 {
 
 	font-size: 2rem;
 	color: var(--color-text);
+
+}
+
+@media screen AND (max-width: 500px) {
+
+	h2 {
+
+		font-size: 1.8rem;
+
+	}
 
 }
 
